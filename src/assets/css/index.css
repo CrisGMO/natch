@@ -1,0 +1,200 @@
+body {
+  /* background-color: black; */
+  /* background: radial-gradient(circle at 10% 10%, 
+              rgb(255, 255, 255) 0%,
+              rgb(207, 207, 207) 5%,
+              rgb(141, 141, 141) 10%,
+              rgb(54, 54, 54) 15%,
+              rgb(0, 0, 0) 20%,),
+              radial-gradient(circle at 90% 90%, 
+              rgb(255, 255, 255) 0%,
+              rgb(207, 207, 207) 5%,
+              rgb(141, 141, 141) 10%,
+              rgb(54, 54, 54) 15%,
+              rgb(0, 0, 0) 20%,); */
+  /* background: linear-gradient(to right, black, rgb(65, 65, 65), black); */
+  margin: 0 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "barra barra"
+                        "portada portada";
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+}
+
+.conteiner {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  animation: aparecer 2s forwards;
+  overflow: hidden;
+}
+
+#header {
+  grid-area: barra;
+  display: grid;
+  z-index: 999;
+  grid-template-columns: auto auto auto auto auto;
+  background: linear-gradient(to top, rgb(34, 34, 34, 0.7), rgb(0, 0, 0, 0.7), rgb(34, 34, 34, 0.7));
+  /* background: rgba(0, 0, 0, 0.7); */
+  height: max-content;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  opacity: 0;
+  animation: aparecer 4s forwards;
+  border-radius: 12px;
+}
+
+#logo {
+  height: 8vw;
+  margin-left: 2vw;
+}
+
+#portada {
+  grid-area: portada;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "portadaIzq portadaTxt portadaDer";
+  height: 100vh;
+  /* animation: girar 10s forwards; */
+}
+
+
+#portada-perspectiva {
+  display: flex;
+  justify-self: end;
+  grid-area: portada2;
+  height: 70vh;
+  width: 100%;
+  /* background-color: rgba(245, 245, 245, 0.466); */
+}
+
+#portada-izq {
+  display: flex;
+  grid-area: portadaIzq;
+  height: 70vh;
+  justify-self: end;
+  animation: moverIzq 3s forwards;
+  transition: ease-out;
+}
+#portada-der {
+  display: flex;
+  grid-area: portadaDer;
+  height: 70vh;
+  justify-self: start;
+  animation: moverDer 3s forwards;
+  transition: ease-out;
+}
+
+#txt-portada {
+  grid-area: portadaTxt;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  & h1 {
+    animation: aparecer 5s forwards;
+    font-size: 2.5vw;
+  }
+  & h2 {
+    color: white;
+    animation: aparecer 7s forwards;
+    font-size: 2vw;
+  }
+}
+
+.texto-con-gradiente {
+  background-image: linear-gradient(to right, #cf55d3, #401bc7); /* Definir el gradiente de color */
+  -webkit-background-clip: text; /* Aplicar el gradiente al texto */
+  background-clip: text;
+  color: transparent; /* Hacer el texto transparente */
+}
+
+/* main {
+  background-color: beige;
+} */
+
+.principal {
+  display: flex;
+  height: 100vh;
+  background-image: url(src/assets/images/fondoCAD.png);
+  & img {
+    height: 70vh;
+  }
+}
+
+.disfuminado {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  width: 90vw;
+  background-color: rgba(27, 27, 44, 0.5);
+}
+
+
+
+#canvasContainer {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#slider {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+@keyframes girar {
+  to {
+    height: 50vw;
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer-achicar {
+  from {
+    opacity: 0;
+    width: 100vw;
+  }
+  to {
+    opacity: 1;
+    width: 90vw;
+  }
+}
+
+@keyframes moverIzq {
+  to {
+    transform: translateX(-3vw);
+  }
+}
+
+@keyframes moverDer {
+  to {
+    transform: translateX(3vw);
+  }
+}
