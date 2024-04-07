@@ -125,7 +125,7 @@ header {
 .principal {
   display: flex;
   height: 100vh;
-  background-image: url(src/assets/images/fondoCAD.png);
+  background-image: url(./src/assets/images/fondoCAD.png);
   & img {
     height: 70vh;
   }
