@@ -19,9 +19,9 @@ body {
 header {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "barra barra"
-                        "portada portada";
+  /* grid-template-rows: auto; */
+  grid-template-areas: "barra"
+                        "portada";
   justify-content: center;
   background-image: url("https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
@@ -31,8 +31,9 @@ header {
 }
 
 .conteiner {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  height: 100%;
+  width: 90vw;
   animation: aparecer 2s forwards;
   overflow: hidden;
 }
@@ -41,8 +42,9 @@ header {
   grid-area: barra;
   display: grid;
   z-index: 999;
-  grid-template-columns: auto auto auto auto auto;
-  background: linear-gradient(to top, rgb(34, 34, 34, 0.7), rgb(0, 0, 0, 0.7), rgb(34, 34, 34, 0.7));
+  margin-top: 10px;
+  /* grid-template-columns: auto auto auto auto auto; */
+  background: linear-gradient(to top, rgba(34, 34, 34, 0.9), rgb(0, 0, 0, 0.9), rgb(34, 34, 34, 0.9));
   /* background: rgba(0, 0, 0, 0.7); */
   height: max-content;
   width: 100%;
@@ -50,7 +52,7 @@ header {
   justify-self: center;
   opacity: 0;
   animation: aparecer 4s forwards;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 #logo {
@@ -60,45 +62,45 @@ header {
 
 #portada {
   grid-area: portada;
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: auto auto auto;
-  grid-template-areas: "portadaIzq portadaTxt portadaDer";
-  height: 100vh;
+  justify-content: center;
+  /* grid-template-columns: auto max-content auto; */
+  /* grid-template-areas: "portadaIzq portadaTxt portadaDer"; */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-top: 20px;
   /* animation: girar 10s forwards; */
 }
 
-
-#portada-perspectiva {
-  display: flex;
-  justify-self: end;
-  grid-area: portada2;
-  height: 70vh;
-  width: 100%;
-  /* background-color: rgba(245, 245, 245, 0.466); */
-}
-
 #portada-izq {
+  position: relative;
   display: flex;
-  grid-area: portadaIzq;
-  height: 70vh;
-  justify-self: end;
+  /* grid-area: portadaIzq; */
+  height: auto;
+  width: 33%;
+  left: 20%;
+  /* justify-self: end; */
   animation: moverIzq 3s forwards;
   transition: ease-out;
 }
 #portada-der {
+  position: relative;
   display: flex;
-  grid-area: portadaDer;
-  height: 70vh;
-  justify-self: start;
+  /* grid-area: portadaDer; */
+  height: auto;
+  width: 33%;
+  right: 10%;
+  /* justify-self: start; */
   animation: moverDer 3s forwards;
   transition: ease-out;
 }
 
 #txt-portada {
+  /* position: relative; */
   grid-area: portadaTxt;
-  align-items: center;
-  justify-self: center;
+  width: 100%;
   text-align: center;
   & h1 {
     animation: aparecer 5s forwards;
@@ -125,9 +127,11 @@ header {
 .principal {
   display: flex;
   height: 100vh;
-  background-image: url(./src/assets/images/fondoCAD.png);
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i.imgur.com/bYHnyBn.png");
   & img {
-    height: 70vh;
+    height: 20vw;
   }
 }
 
@@ -137,6 +141,7 @@ header {
   justify-self: center;
   width: 90vw;
   background-color: rgba(27, 27, 44, 0.5);
+  overflow-x: auto;
 }
 
 
@@ -189,12 +194,37 @@ header {
 
 @keyframes moverIzq {
   to {
-    transform: translateX(-3vw);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes moverDer {
   to {
-    transform: translateX(3vw);
+    transform: translateX(30%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "barra barra"
+                          "portada portada";
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100vw;
+    height: 100vw;
+  }
+
+  #portada {
+    height: 100%;
+    & img {
+      width: 45vw;
+      height: auto;
+    }
   }
 }
