@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/assets/css/index.css">
+    <link rel="stylesheet" href="src/assets/css/carrusel.css">
     <title>Natch Arquitectura</title>
   </head>
   <body>
@@ -38,14 +39,82 @@
       <!-- <img src="https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> -->
     </header>
     <main class="principal">
+
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+
+          <li id="carousel__slide1"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <img src="https://i.imgur.com/DJzIHIr.png">
+            </div>
+            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+          </li>
+          
+          <li id="carousel__slide2"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <img src="https://i.imgur.com/lJD0TT6.png">
+            </div>
+            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+          </li>
+
+          <li id="carousel__slide3"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <img src="https://i.imgur.com/uqkXL6g.png">
+            </div>
+            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+          </li>
+
+          <li id="carousel__slide4"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <img src="https://i.imgur.com/eu9zYij.png">
+            </div>
+            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+          </li>
+
+        </ol>
+
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1"
+                 class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2"
+                 class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3"
+                 class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4"
+                 class="carousel__navigation-button">Go to slide 4</a>
+            </li>
+          </ol>
+        </aside>
+
+      </section>
+
       <div class="disfuminado">
         <!-- <img src="src/assets/images/vistazoFachada.png"> -->
-        <figure>
+        <!-- <figure>
           <img src="https://i.imgur.com/DJzIHIr.png">
           <figcaption>Fachada</figcaption>
         </figure>
         <figure>
-          <img src="https://i.imgur.com/lJD0TT6.png">
           <figcaption>Cortes</figcaption>
         </figure>
         <figure>
@@ -55,7 +124,7 @@
         <figure>
           <img src="https://i.imgur.com/eu9zYij.png">
           <figcaption>Canchas</figcaption>
-        </figure>
+        </figure> -->
         <!-- <img src="src/assets/images/vistazoCortes.png"> -->
         <!-- <img src="src/assets/images/vistazoComplejidad.png"> -->
         <!-- <img src="s`rc/assets/images/vistazoChanchas.png"> -->
