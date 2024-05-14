@@ -112,6 +112,7 @@ header {
 .presentacion {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
   grid-template-areas: "presentacion-texto presentacion-texto presentacion-texto ";
   align-self: center;
   width: 80%;
@@ -124,6 +125,16 @@ header {
   & h3 {
     padding: 0 10%;
   }
+}
+
+.avatar-section {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .glass-efect {
@@ -268,6 +279,10 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .conteiner {
+    height: auto;
+  }
+
   header {
     display: grid;
     grid-template-columns: auto auto;
@@ -375,7 +390,7 @@ header {
 
   @keyframes agrandar {
     to {
-      transform: scale(2);
+      transform: scale(1.7);
     }
   }
 }
