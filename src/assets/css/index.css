@@ -15,7 +15,6 @@ body {
 header {
   display: grid;
   grid-template-columns: auto auto;
-  /* grid-template-rows: auto; */
   grid-template-areas: "barra"
                         "portada";
   justify-content: center;
@@ -390,7 +389,7 @@ header {
 
   @keyframes agrandar {
     to {
-      transform: scale(1.7);
+      transform: scale(1.3s);
     }
   }
 }
