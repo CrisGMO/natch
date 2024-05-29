@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { StrictMode } from 'react'
 import ReactDOM, { createRoot } from 'react-dom/client'
 import { Carousel } from "antd";
 import { Analytics } from "@vercel/analytics/react"
 
 const carruselRoot = ReactDOM.createRoot(document.getElementById('carrusel'));
-const analytics = ReactDOM.createRoot(document.getElementById('analytics'));
-analytics.render(<Analytics></Analytics>)
 const contentStyle = {
     margin: 0,
     height: '160px',
@@ -16,6 +14,7 @@ const contentStyle = {
   };
 
 carruselRoot.render(
+  <StrictMode>
     <Carousel autoplay fade>
     <div>
       <h3 style={contentStyle}><img src="https://i.imgur.com/DJzIHIr.png" alt="" /></h3>
@@ -30,4 +29,6 @@ carruselRoot.render(
       <h3 style={contentStyle}><img src="https://i.imgur.com/eu9zYij.png" alt="" /></h3>
     </div>
   </Carousel>
+  <Analytics/>
+  </StrictMode>
 )
