@@ -1,119 +1,351 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="src/assets/images/natch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Town HTML CSS Template</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
     <link rel="stylesheet" href="src/assets/css/index.css">
-    <title>Natch Arquitectura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+
+
   </head>
-  <body>
-    <header>
-      <div class="conteiner">
-        <div id="header" class="glass-efect">
-          <div>
-            <a href="">
-              <img id="logo" src="src/assets/images/lg-natch-dark2.png">
-            </a>
-          </div>
+  <body class="d-flex flex-wrap">    
+    <!-- Hero section -->
+    <section id="hero" class="tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="#hero" class="navbar-brand text-dark"><img id="logo" src="src/assets/images/natch solo logo.png">Natch Arquitectura</a>
+          </div>             
+            
+          <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+            <!-- <animated-icons
+              src="https://animatedicons.co/get-icon?name=Menu&style=minimalistic&token=c9a15816-8582-4762-810c-23adfb75a127"
+              trigger="click"
+              attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+              height="3rem"
+              width="3rem"
+            ></animated-icons> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link text-dark" href="#introduction">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link text-dark" href="#work">Nuestros Servicios</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link text-dark" href="#workDo">Nuestros Trabajos</a>
+              </li>                    
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link text-dark" href="#contact">Contacto</a>
+              </li>                    
+            </ul>
+          </div>        
         </div>
-        <div id="portada" class="glass-efect">
-          <!-- <img id="portada-perspectiva" src="src/assets/images/portada2.png"> -->
-          <img id="portada-izq" src="src/assets/images/portada-izq.png">
-          <div id="txt-portada">
-            <h1 class="texto-con-gradiente">Profesional</h1>
-            <h1 class="texto-con-gradiente">Natasha Cabezas</h1>
-            <h1 class="texto-con-gradiente">Maestro Mayor de Obras</h1>
-            <h2>
-              Cadista. Habilitaciones. Croquis. <br>
-              Planos de Subsistencia. <br>
-              Diseños 2D y 3D.
-            </h2>
-          </div>
-          <img id="portada-der" src="src/assets/images/portada-der.png">
-        </div>
-      </div>
+      </nav>
       
-      <!-- <img src="https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> -->
-    </header>
-    <main class="presentacion" id="quien-soy">
-      <div class="presentacion-texto glass-efect">
-        <h2>¿Quien soy?</h2>
-        <h3>Hola, soy la profesional Cabezas Natasha. Soy egresada Maestro Mayor de Obras y estudiante de Arquitectura en la Universidad Nacional de Moreno.
-          Con centenas de proyectos en nuestro portafolio, junto con el estudio Grupo MGC & Asosiados, por nuestro compromiso y nuestra profesionalidad, 
-        somos los indicados para llevar adelante sus nuevos proyectos.</h3>
-
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+            <h2 class="tm-hero-title oswald text-white">Cabezas Natasha</h2>
+            <p class="tm-hero-subtitle text-white">
+              Maestro Mayor de Obras
+            </p>
+        </div>        
       </div>
-      <div class="avatar-section glass-efect">
-        <img class="avatar" src="src/assets/images/avatarNC.jpeg" alt="">
+
+      <div class="tm-next tm-intro-next">
+        <a href="#introduction" class="text-center tm-down-arrow-link">
+          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+        </a>
       </div>      
-    </main>
-
-    <section class="principal">
-      <!-- testimonios -->
-      <section class="conteiner-carrusel">
-        <div id="carrusel" class="carrusel">
-
-        </div>
-        <div class="carrusel-texto">
-          <h2>
-            Nuestros trabajos.
-          </h2>
-          <h3>
-            Nuestros trabajos dan garantia de excelencia.
-            Si necesitas ponerte al dia con el municipio y/o hacer los planos correspondientes de tu propiedad, nosotros trabajamos con planos de subsistencia,
-            planos de ampliaciones, planos de modificacion o planos de obra nueva, incluyendo tramites.
-          </h3>
-        </div>
-      </section>
     </section>
 
-    <section>
-
+    <section id="introduction" class="tm-section-pad-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/the-town-01.jpg" alt="Image" class="img-fluid tm-intro-img" />
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-intro-text-container">
+                <h2 class="tm-text-primary mb-4 tm-section-title">Sobre mi</h2>
+                <p class="mb-4 tm-intro-text">
+                  Soy Maestro Mayor de Obras con experiencia en Planos <strong>Municipales</strong>. Trabajo con cmpromiso, claridad tecnica y acompañamiento en todo el proceso del tramite. Actualmente estoy cursando la carrera de Arquitectura en la Universidad Nacional de Moreno para seguir formandome y ofrececr un servicio aun mas completo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Nuestros Servicios</h2>
+              <p>
+                Nuestros trabajos dan garantia de excelencia.
+                      Si necesitas ponerte al dia con el municipio y/o hacer los planos correspondientes de tu propiedad, nosotros trabajamos con planos de subsistencia,
+                      planos de ampliaciones, planos de modificacion o planos de obra nueva, incluyendo tramites.
+              </p>
+              <div class="d-flex flex-wrap">
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                  <i class="fas fa-4x fa-city text-center tm-icon"></i>
+                  <h4 class="text-center tm-text-primary mb-4">Ampliciones no declaradas</h4>
+                  <p>
+                    completar
+                  </p>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                  <i class="fas fa-4x fa-city text-center tm-icon"></i>
+                  <h4 class="text-center tm-text-primary mb-4">Obras ya construidas sin planos</h4>
+                  <p>
+                    completar
+                  </p>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                  <i class="fas fa-4x fa-city text-center tm-icon"></i>
+                  <h4 class="text-center tm-text-primary mb-4">Demoliciones parciales o totales</h4>
+                  <p>
+                    completar
+                  </p>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                  <i class="fas fa-4x fa-city text-center tm-icon"></i>
+                  <h4 class="text-center tm-text-primary mb-4">Tramites de habilitacion municipal</h4>
+                  <p>
+                    completar
+                  </p>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                  <i class="fas fa-4x fa-city text-center tm-icon"></i>
+                  <h4 class="text-center tm-text-primary mb-4">Transferencias de inmuebles con planos faltantes</h4>
+                  <p>
+                    completar
+                  </p>
+                </div>
+              </div>
+          </div>            
+        </div>
     </section>
 
-    <footer class="pie">
-      <div class="contacto">
-        <div class="contacto-imagen"><img src="src/assets/images/robot.png" alt=""></div>
-        <a href="tel:+541136366756"><img class="icon-pie" src="src/assets/images/icon-whatsapp.png" alt=""> +54 11 36366756</a>
-        <a href="mailto:adminplus@gmail.com"><img class="icon-pie" src="src/assets/images/icon-gmail.png" alt="">  adminplus@yahoo.com</a>
-        <div class="mapa-pie">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.3551228913192!2d-58.84533293036168!3d-34.568225398310446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc90b8ea0652a1%3A0xea9f4a2b2c30773c!2sCasacuberta%205486%2C%20Cuartel%20V%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715592559834!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="workDo" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Nuestros Trabajos</h2>
+              <!-- <section class="conteiner-carrusel"> -->
+              <p class="text-center">
+                  Nuestros trabajos dan garantia de excelencia.
+                  Si necesitas ponerte al dia con el municipio y/o hacer los planos correspondientes de tu propiedad, nosotros trabajamos con planos de subsistencia,
+                  planos de ampliaciones, planos de modificacion o planos de obra nueva, incluyendo tramites.
+               </p>
+               <div id="carrusel" class="carrusel"></div>
+               <!-- <div class="conteiner-carrusel">
+               </div> -->
         </div>
       </div>
-      <div class="enlaces">
-        <h3>Enlaces</h3>
-        <div>
-          <a href="#quien-soy">¿Quien soy?</a>
-          <a href="#carrusel">Nuestros trabajos</a>
-        </div>
-      </div>
-      <div class="redes">
-        <h3>Redes Sociales</h3>
-        <div>
-          <a href=""><img src="src/assets/images/icon-facebook.png" alt="">@Facebook</a>
-          <a href=""><img src="src/assets/images/icon-instagram.png" alt="">@Instagram</a>
-          <a href=""><img src="src/assets/images/icon-linkedin.png" alt="">@LinkedIn</a>
-        </div>
-      </div>
-    </footer>
+    </section>
 
+
+
+    <!-- Contact -->
+    <section id="contact" class="tm-section-pad-top tm-parallax-2">
+      <footer class="pie">
+        <div class="contacto">
+          <div class="contacto-imagen"><img src="src/assets/images/robot.png" alt=""></div>
+          <a href="tel:+541136366756"><img class="icon-pie" src="src/assets/images/icon-whatsapp.png" alt=""> +54 11 22763011</a>
+          <a href="mailto:cabezasnatasha22@gmail.com"><img class="icon-pie" src="src/assets/images/icon-gmail.png" alt="">  cabezasnatasha22@gmail.com</a>
+          <div class="mapa-pie">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.3551228913192!2d-58.84533293036168!3d-34.568225398310446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc90b8ea0652a1%3A0xea9f4a2b2c30773c!2sCasacuberta%205486%2C%20Cuartel%20V%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715592559834!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="enlaces">
+          <h3>Enlaces</h3>
+          <div>
+            <a href="#introduction">¿Quien soy?</a>
+            <a href="#work">Nuestros Servicios</a>
+          </div>
+        </div>
+        <div class="redes">
+          <h3>Redes Sociales</h3>
+          <div>
+            <!-- <a href=""><img src="src/assets/images/icon-facebook.png" alt="">@Facebook</a> -->
+            <a href=""><img src="src/assets/images/icon-instagram.png" alt="">@Instagram</a>
+            <a href=""><img src="src/assets/images/icon-linkedin.png" alt="">@LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
+
+      function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight > 500) {
+          _offset = 400;
+        } 
+        if(windowHeight > 680) {
+          _offset = 300
+        }
+        if(windowHeight > 830) {
+          _offset = 210;
+        }
+
+        return _offset;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
+
+      // Parallax function
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+      var background_image_parallax = function($object, multiplier, forceSet){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        // $object.css({"background-attatchment" : "fixed"});
+
+        if(forceSet) {
+          setParallaxPosition($doc, multiplier, $object);
+        } else {
+          $(window).scroll(function(){          
+            setParallaxPosition($doc, multiplier, $object);
+          });
+        }
+      };
+
+      var background_image_parallax_2 = function($object, multiplier){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({"background-attachment" : "fixed"});
+        $(window).scroll(function(){
+          var firstTop = $object.offset().top,
+              pos = $(window).scrollTop(),
+              yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({"background-position" : bg_css });
+        });
+      };
+      
+      $(function(){
+        // Hero Section - Background Parallax
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);   
+        
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){          
+          if($(document).scrollTop() > 120) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav();        
+        
+        // Add smooth scrolling to all links
+        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 400, function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: { enabled: true }
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+        });
+      });
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
     <div id="analitycs"></div>
 
-    <!-- atribucion
-    <a href="https://www.flaticon.es/iconos-gratis/robot" title="robot iconos">Robot iconos creados por Icongeek26 - Flaticon</a> -->
-    <!-- <a target="_blank" href="https://icons8.com/icon/16713/whatsapp">WhatsApp</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a> -->
-    <!-- <a target="_blank" href="https://icons8.com/icon/108812/linkedin">LinkedIn</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a> -->
-
-
-
-
-
-
-
-
-    <!-- <div id="root"></div> -->
-    <script type="module" src="/src/main.jsx"></script>
 
   </body>
 </html>

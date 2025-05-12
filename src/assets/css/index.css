@@ -49,8 +49,8 @@ header {
 }
 
 #logo {
-  height: 8vw;
-  margin-left: 2vw;
+  height: 3rem;
+  /* margin-left: ; */
 }
 
 #portada {
@@ -149,7 +149,7 @@ header {
 }
 
 .conteiner-carrusel {
-  width: 80vw;
+  /* width: 80vw; */
   /* height: 500px; */
   background-color: rgba(255, 255, 255, 0.7);
   display: grid;
@@ -175,6 +175,32 @@ header {
 
 .carrusel-texto {
   margin: 15px;
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Atenuar el fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.zoom-container {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.zoomed-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 @keyframes girar {
@@ -223,7 +249,7 @@ header {
 }
 
 .pie {
-  background-color: black;
+  /* background-color: black; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
@@ -275,6 +301,13 @@ header {
 }
 
 .redes {
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
